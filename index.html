@@ -4,15 +4,110 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <meta name="desctiption" content="YUSHI SHIOKAWAのポートフォリオサイト。TechAcademyのオンラインブートキャンプで制作したメッセージボードやオリジナルサービスなどのアプリケーションを紹介。">
+    <title>YUSHI SHIOKAWA</title>
     <!-- BootstrapのCSS読み込み -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- カスタマイズ用CSS -->
+    <link rel="stylesheet" href="index.css">
     <!-- jQuery読み込み -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">My Portfolio</a>
+          </div><!-- navbar-header -->
+
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#about">About me</a></li>
+              <li class="nav-button">
+                <a href="http://github.com/yushi-s" target="_blank" class="btn btn-primary">My GitHub</a>
+              </li>
+            </ul>
+          </div> <!-- collapse navbar-collapse -->
+        </div> <!-- container-fluid -->
+      </nav>
+    </header>
+    <!-- <div class="container"> -->
+      <div class="main-top" id="home">
+        <h1 class="portfolio">Portfolio</h1>
+        <h2 class="top-name">Yushi Shiokawa</h2>
+      </div> <!-- main-top -->
+
+      <div class="container-fluid works" id="works">
+        <h2>Works</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="http://github.com/yushi-s" target="_blank">
+              <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+              <h4>メッセージボード</h4>
+            </a>
+            <p>メッセージボードです。</p>
+          </div>
+          <div class="col-sm-6">
+            <a href="http://github.com/yushi-s" target="_blank">
+              <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+              <h4>Twitterクローン</h4>
+            </a>
+            <p>Twitterクローンです。</p>
+          </div>
+        </div> <!-- row -->
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="http://github.com/yushi-s" target="_blank">
+              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+              <h4>モノリスト</h4>
+            </a>
+            <p>モノリストです。</p>
+          </div>
+          <div class="col-sm-6">
+            <a href="http://github.com/yushi-s" target="_blank">
+              <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+              <h4>オリジナルサービス</h4>
+            </a>
+            <p>オリジナルサービスです。</p>
+          </div>
+        </div> <!-- row -->
+        <!-- <div class="row">
+          <div class="col-sm-offset-4 col-sm-4 works-github">
+            <a href="http://github.com/yushi-s" target="_blank" class="btn btn-default btn-lg">My GitHub</a>
+          </div>
+        </div> -->
+      </div> <!-- works -->
+
+      <div class="about" id="about">
+        <h2>About</h2>
+        <div id="photo">
+            <img src="photo1.jpg" alt="" />
+        </div>
+        <section>
+          <h3>塩川 雄史（Shiokawa Yushi）</h3>
+          <p>出身：山形県米沢市（米沢牛が有名です！）</p>
+          <p>現在：明治大学 情報コミュニケーション学部在学</p>
+          <p>趣味：写真撮影、読書、旅行、音楽</p>
+        </section>
+      </div><!-- about -->
+
+    <!-- </div> container -->
+
+    <footer>
+      <div class="copyright">Yushi Shiokawa</div>
+    </footer>
+
   </body>
 </html>
